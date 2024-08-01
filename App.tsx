@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { SafeAreaView } from 'react-native'
+// import { Grafico3 } from './src/screen/Grafico3'
+// import { Grafico2 } from './src/screen/Grafico2'
+import { Ejercicio1 } from './src/screen/Ejercicio1'
+// import { Grafico1 } from './src/screen/Grafico1'
+// import { Grafico4 } from './src/screen/Grafico4';
 
-export default function App() {
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <SafeAreaView>
+      <Ejercicio1/>
+      {/* <Grafico1/> */}
+      {/* <Grafico2/> */}
+      {/* <Grafico3/> */}
+      {/* <Grafico4/> */}
+    </SafeAreaView>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
+
